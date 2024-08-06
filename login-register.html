@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+
+   <!--=============== SWIPER CSS ===============-->
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+   />
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <h1>EvoStore <i class="ri-shopping-cart-2-line"></i></h1>
+        </a>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link ">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="shop.html" class="nav-link">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="accounts.html" class="nav-link">My Account</a>
+              </li>
+              <li class="nav-item">
+                <a href="compare.html" class="nav-link">Compare</a>
+              </li>
+              <li class="nav-item">
+                <a href="login-register.html" class="nav-link active-link">Login</a>
+              </li>
+
+            </ul>
+
+            <div class="search">
+              <input type="text" placeholder="Search for item..." class="form-input">
+              <button class="search-btn">
+                <img src="assets/img/search.png" alt="">
+              </button>
+            </div>
+        </div>
+        
+        <div class=" wishlist-cart">
+          <a href="wishlist.html" class="header-action-btn">
+          <img src="assets/img/icon-heart.svg" alt="">
+          <span class="count">3</span>
+        </a>
+        
+        <a href="cart.html" class="header-action-btn">
+          <img src="assets/img/icon-cart.svg" alt="">
+          <span class="count">3</span>
+        </a>
+        <div class="header-action-btn nav-toggle" id="nav-toggle">
+          <img src="assets/img/menu-burger.svg" alt="">
+        </div>
+      </div>
+      
+      </nav>
+    </header>
+
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb-list container flex">
+          <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+          <li><span class="breadcrumb-link">></span></li>
+          <li class="breadcrumb-link">Login / Register</a></li>
+        </ul>
+      </section>
+
+
+      <!--=============== LOGIN-REGISTER ===============-->
+      <section class="login-register section-lg container">
+        <div class="login-register-container grid">
+          <div class="login">
+            <h3 class="section-title">Login</h3>
+
+            <form action="" class="form grid">
+              <input type="email" placeholder="Your Email" class="form-input">
+
+              <input type="password" placeholder="Your Password" class="form-input">
+
+              <div class="form-btn">
+                <button class="btn">Login</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="register">
+            <h3 class="section-title">Create an Account</h3>
+
+            <form action="" class="form grid">
+              <input type="text" placeholder="Username" class="form-input">
+
+              <input type="email" placeholder="Your Email" class="form-input">
+
+              <input type="password" placeholder="Your Password" class="form-input">
+
+              <input type="password" placeholder="Conform Password" class="form-input">
+
+              <div class="form-btn">
+                <button class="btn">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section home-newsletter">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-title flex">
+            <img src="assets/img/icon-email.svg" alt="" class="newsletter-icon">
+            Sign Up to Newsletter
+          </h3>
+          <p class="newsletter-description">
+            ...and receive free coupon for first shopping
+          </p>
+          <form action="" class="newsletter-form">
+            <input type="text" placeholder="Enter your Email" class="newsletter-input">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer-container grid">
+       <div class="footer-content">
+         <a href="index.html" class="footer-logo">
+           <img src="assets/img/logo.svg" alt="" class="footer-logo-img">
+         </a>
+         <h4 class="footer-subtitle">Contact</h4>
+         <p class="footer-description">
+           <span>Address:</span> 564 NewDelhi, Street 5 , India
+         </p>
+         <p class="footer-description">
+           <span>Phone:</span> (+91) 12 3456 7890
+         </p>
+         <p class="footer-description">
+          <span>Time:</span> 10:00 - 18:00, Mon-Sat
+         </p>
+ 
+         <div class="footer-social">
+           <h4 class="footer-subtitle">Follow Us</h4>
+         </div>
+ 
+         <div class="footer-social-links flex">
+           <a href="#">
+             <img src="assets/img/icon-facebook.svg" alt="" class="footer-social-icon">
+           </a>
+ 
+           <a href="#">
+             <img src="assets/img/icon-instagram.svg" alt="" class="footer-social-icon">
+           </a>
+ 
+           <a href="#">
+             <img src="assets/img/icon-pinterest.svg" alt="" class="footer-social-icon">
+           </a>
+ 
+           <a href="#">
+             <img src="assets/img/icon-twitter.svg" alt="" class="footer-social-icon">
+           </a>
+ 
+           <a href="#">
+             <img src="assets/img/icon-youtube.svg" alt="" class="footer-social-icon">
+           </a>
+         </div>
+ 
+       </div>
+ 
+       <div class="footer-content">
+         <h4 class="footer-title">Address</h4>
+         
+         <ul class="footer-links"> 
+           <li><a href="" class="footer-link">About Us</a></li>
+           <li><a href="" class="footer-link">Delivery Information</a></li>
+           <li><a href="" class="footer-link">Privacy Policy</a></li>
+           <li><a href="" class="footer-link">Terms & Condition</a></li>
+           <li><a href="" class="footer-link">Contact Us Us</a></li>
+           <li><a href="" class="footer-link">Support Center</a></li>
+         </ul>
+       </div>
+ 
+       <div class="footer-content">
+         <h4 class="footer-title">My Account</h4>
+         
+         <ul class="footer-links"> 
+           <li><a href="" class="footer-link">Sign In</a></li>
+           <li><a href="" class="footer-link">View Cart</a></li>
+           <li><a href="" class="footer-link">My Wishlist</a></li>
+           <li><a href="" class="footer-link">Track My Order</a></li>
+           <li><a href="" class="footer-link">Help</a></li>
+         </ul>
+       </div>
+ 
+       <div class="footer-content">
+           <h4 class="footer-title">Secured Payment & Gateways</h4>
+           <img src="assets/img/payment-method.png" alt="" class="payment-img">
+         </div>
+       </div>
+ 
+       <div class="footer-bottom">
+         <p class="copyright">&copy; 2023. All rights reserved</p>
+       </div>
+      </div>
+     </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

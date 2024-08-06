@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <h1>EvoStore <i class="ri-shopping-cart-2-line"></i></h1>
+        </a>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link ">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="shop.html" class="nav-link">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="accounts.html" class="nav-link">My Account</a>
+              </li>
+              <li class="nav-item">
+                <a href="compare.html" class="nav-link">Compare</a>
+              </li>
+              <li class="nav-item">
+                <a href="login-register.html" class="nav-link">Login</a>
+              </li>
+
+            </ul>
+
+            <div class="search">
+              <input type="text" placeholder="Search for item..." class="form-input">
+              <button class="search-btn">
+                <img src="assets/img/search.png" alt="">
+              </button>
+            </div>
+        </div>
+
+        <div class=" wishlist-cart">
+          <a href="wishlist.html" class="header-action-btn">
+          <img src="assets/img/icon-heart.svg" alt="">
+          <span class="count">3</span>
+        </a>
+        
+        <a href="cart.html" class="header-action-btn">
+          <img src="assets/img/icon-cart.svg" alt="">
+          <span class="count">3</span>
+        </a>
+        <div class="header-action-btn nav-toggle" id="nav-toggle">
+          <img src="assets/img/menu-burger.svg" alt="">
+        </div>
+      </div>
+      
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb-list container flex">
+          <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+          <li><span class="breadcrumb-link">></span></li>
+          <li class="breadcrumb-link">Fashion</a></li>
+        </ul>
+      </section>
+
+      <!--=============== DETAILS ===============-->
+      <section class="details section-lg">
+        <div class="details-container container grid">
+          <div class="details-group">
+            <img src="assets/img/product-8-1.jpg" alt="" class="details-img">
+
+            <div class="details-small-images grid">
+              <img src="assets/img/product-8-2.jpg" alt="" class="details-small-img">
+              <img src="assets/img/product-8-1.jpg" alt="" class="details-small-img">
+              <img src="assets/img/product-8-2.jpg" alt="" class="details-small-img">
+              
+            </div>
+          </div>
+
+          <div class="details-group">
+            <h3 class="details-title">Henley Shirt</h3>
+            <p class="details-brand">Brand: <span>Adidas</span></p>
+            <div class="details-price flex">
+              <span class="new-price">₹ 2500</span>
+              <span class="old-price">₹ 3500</span>
+              <span class="save-price">28% off</span>
+            </div>
+            <p class="short-description">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam excepturi natus ad dicta, aliquam corrupti non odit libero quasi, esse sequi aspernatur impedit voluptatem consequatur sunt repellendus mollitia quam.
+             Vitae nostrum voluptatem cum voluptates asperiores pariatur, facere voluptatibus recusandae fugiat hic porro inventore repellat illum deleniti voluptate rem exercitationem nisi architecto, quis placeat quibusdam ut non. Inventore, veniam dolores?
+            </p>
+            <ul class="product-list">
+              <li class="list-item flex">
+                <i class="ri-vip-crown-2-line"></i> 1 Year Brand Warranty
+              </li>
+
+
+              <li class="list-item flex">
+                <i class="ri-refund-line"></i> 7 Day Refund Policy
+              </li>
+
+              <li class="list-item flex">
+                <i class="ri-bank-card-line"></i> Cash on Delivery Available
+              </li>
+            </ul>
+            <div class="details-color flex">
+              <span class="details-color-title">Color</span>
+              <ul class="color-list">
+                <li>
+                  <a 
+                  href="#" 
+                  class="color-link" 
+                  style="background-color: hsl(37, 100%, 65%);"></a>
+                </li>
+
+                <li>
+                  <a 
+                  href="#" 
+                  class="color-link" 
+                  style="background-color: hsl(353, 100%, 67%);"></a>
+                </li>
+               
+                <li>
+                  <a 
+                  href="#" 
+                  class="color-link" 
+                  style="background-color: hsl(49, 100%, 60%);"></a>
+                </li>
+
+                <li>
+                  <a 
+                  href="#" 
+                  class="color-link" 
+                  style="background-color: hsl(304, 100%, 78%);"></a>
+                </li>
+
+                <li>
+                  <a 
+                  href="#" 
+                  class="color-link" 
+                  style="background-color: hsl(126, 61%, 52%);"></a>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="details-size flex">
+              <span class="details-size-title">Size</span>
+              <ul class="size-list">
+                <li>
+                  <a 
+                  href="#" 
+                  class="size-link size-active">M</a>
+                </li>
+
+                <li>
+                  <a 
+                  href="#" 
+                  class="size-link">L</a>
+                </li>
+               
+                <li>
+                  <a 
+                  href="#" 
+                  class="size-link">XL</a>
+                </li>
+
+                <li>
+                  <a 
+                  href="#" 
+                  class="size-link">XXL</a>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="detials-action">
+              <input type="number" class="quantity" value="3">
+              <a href="#" class="btn btn-sm">Add To Cart</a>
+              <a href="#" class="details-action-btn">
+                <i class="ri-heart-line"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!--=============== DETAILS TAB ===============-->
+      <section class="details__tab container">
+        <div class="details-tabs">
+          <span class="details-tab active-tab" data-target="#info">
+            Additional Info
+          </span>
+          <span class="details-tab" data-target="#reviews">
+            Reviews (3)
+          </span>
+          
+        </div>
+        <div class="details-tabs-content">
+          <div class="details-tab-content active-tab" content id="info">
+            <table class="info-table">
+              <tr>
+                <th>Color</th>
+                <td>Black , Blue , Red , White</td>
+              </tr>
+
+              <tr>
+                <th>Size</th>
+                <td>M,S,L</td>
+              </tr>
+
+              <tr>
+                <th>Weight Capacity</th>
+                <td>60lbs</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="details-tab-content" content id="reviews">
+            <div class="reviews-container grid">
+              <div class="review-single">
+                <div>
+                  <img src="assets/img/avatar-1.jpg" alt="" class="review-img">
+                  <h4 class="review-title">Jacky Chan</h4>
+                </div>
+                <div class="review-data">
+                  <div class="review-rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <p class="review-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et.
+                  </p>
+                  <span class="review-date">December 4, 2023 at 3:20 pm</span>
+                </div>
+              </div>
+
+              <div class="review-single">
+                <div>
+                  <img src="assets/img/avatar-2.jpg" alt="" class="review-img">
+                  <h4 class="review-title">Amy Jones</h4>
+                </div>
+                <div class="review-data">
+                  <div class="review-rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <p class="review-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et.
+                  </p>
+                  <span class="review-date">January 4, 2023 at 2:20 pm</span>
+                </div>
+              </div>
+
+              <div class="review-single">
+                <div>
+                  <img src="assets/img/avatar-3.jpg" alt="" class="review-img">
+                  <h4 class="review-title">Michel John</h4>
+                </div>
+                <div class="review-data">
+                  <div class="review-rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <p class="review-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et.
+                  </p>
+                  <span class="review-date">November 15, 2023 at 8:20 pm</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="review-form">
+              <h4 class="review-form-title">Add a Review</h4>
+              <div class="rate-product review-rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <form action="" class="form grid">
+                <textarea class="form-input textarea" placeholder="Write Comment"></textarea>
+                <div class="form-group grid">
+                  <input type="text" placeholder="Name" class="form-input"/>
+
+                  <input type="email" placeholder="Email" class="form-input"/>
+
+                </div>
+
+                <div class="form-btn">
+                  <button class="btn">Submit Review</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== PRODUCTS ===============-->
+      <section class="products container section-lg">
+        <h3 class="section-title"><span>Related</span>Prdoucts</h3>
+
+        <div class="product-container grid">
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-imgages">
+                <img src="assets/img/product-2-1.jpg" alt="" class="product-img default">
+                <img src="assets/img/product-2-2.jpg" alt="" class="product-img hover">
+              </a>
+              <div class="product-action">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="ri-eye-line"></i>
+                </a>
+
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="ri-heart-line"></i>
+                </a>
+
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="ri-shuffle-line"></i>
+                
+                </a>
+              </div>
+              <div class="product-badge light-green">Hot</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Pattern Shirts</h3>
+              </a>
+              <div class="product-rating">
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+              </div>
+              <div class="product-price flex" >
+                <span class="new-price">₹ 2500</span>
+                <span class="old-price">₹ 3500</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-imgages">
+                <img src="assets/img/product-6-1.jpg" alt="" class="product-img default">
+                <img src="assets/img/product-6-2.jpg" alt="" class="product-img hover">
+              </a>
+              <div class="product-action">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="ri-eye-line"></i>
+                </a>
+
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="ri-heart-line"></i>
+                </a>
+
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="ri-shuffle-line"></i>
+                
+                </a>
+              </div>
+              <div class="product-badge light-pink">-22%</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Pattern Shirts</h3>
+              </a>
+              <div class="product-rating">
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+              </div>
+              <div class="product-price flex" >
+                <span class="new-price">₹ 2500</span>
+                <span class="old-price">₹ 3500</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-imgages">
+                <img src="assets/img/product-7-1.jpg" alt="" class="product-img default">
+                <img src="assets/img/product-7-2.jpg" alt="" class="product-img hover">
+              </a>
+              <div class="product-action">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="ri-eye-line"></i>
+                </a>
+
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="ri-heart-line"></i>
+                </a>
+
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="ri-shuffle-line"></i>
+                
+                </a>
+              </div>
+              <div class="product-badge light-green">Hot</div>
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Pattern Shirts</h3>
+              </a>
+              <div class="product-rating">
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+              </div>
+              <div class="product-price flex" >
+                <span class="new-price">₹ 2500</span>
+                <span class="old-price">₹ 3500</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-banner">
+              <a href="details.html" class="product-imgages">
+                <img src="assets/img/product-8-1.jpg" alt="" class="product-img default">
+                <img src="assets/img/product-8-2.jpg" alt="" class="product-img hover">
+              </a>
+              <div class="product-action">
+                <a href="#" class="action-btn" aria-label="Quick View">
+                  <i class="ri-eye-line"></i>
+                </a>
+
+                <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                  <i class="ri-heart-line"></i>
+                </a>
+
+                <a href="#" class="action-btn" aria-label="Compare">
+                  <i class="ri-shuffle-line"></i>
+                
+                </a>
+              </div>
+              
+            </div>
+            <div class="product-content">
+              <span class="product-category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product-title">Colorful Pattern Shirts</h3>
+              </a>
+              <div class="product-rating">
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+                <i class="ri-star-line"></i>
+              </div>
+              <div class="product-price flex" >
+                <span class="new-price">₹ 2500</span>
+                <span class="old-price">₹ 3500</span>
+              </div>
+              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-title flex">
+            <img src="assets/img/icon-email.svg" alt="" class="newsletter-icon">
+            Sign Up to Newsletter
+          </h3>
+          <p class="newsletter-description">
+            ...and receive free coupon for first shopping
+          </p>
+          <form action="" class="newsletter-form">
+            <input type="text" placeholder="Enter your Email" class="newsletter-input">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer-container grid">
+       <div class="footer-content">
+         <a href="index.html" class="footer-logo">
+           <img src="assets/img/logo.svg" alt="" class="footer-logo-img">
+         </a>
+         <h4 class="footer-subtitle">Contact</h4>
+         <p class="footer-description">
+           <span>Address:</span> 564 NewDelhi, Street 5 , India
+         </p>
+         <p class="footer-description">
+           <span>Phone:</span> (+91) 12 3456 7890
+         </p>
+         <p class="footer-description">
+          <span>Time:</span> 10:00 - 18:00, Mon-Sat
+         </p>
+ 
+         <div class="footer-social">
+           <h4 class="footer-subtitle">Follow Us</h4>
+         </div>
+ 
+         <div class="footer-social-links flex">
+           <a href="#">
+             <img src="assets/img/icon-facebook.svg" alt="" class="footer-social-icon">
+           </a>
+ 
+           <a href="#">
+             <img src="assets/img/icon-instagram.svg" alt="" class="footer-social-icon">
+           </a>
+ 
+           <a href="#">
+             <img src="assets/img/icon-pinterest.svg" alt="" class="footer-social-icon">
+           </a>
+ 
+           <a href="#">
+             <img src="assets/img/icon-twitter.svg" alt="" class="footer-social-icon">
+           </a>
+ 
+           <a href="#">
+             <img src="assets/img/icon-youtube.svg" alt="" class="footer-social-icon">
+           </a>
+         </div>
+ 
+       </div>
+ 
+       <div class="footer-content">
+         <h4 class="footer-title">Address</h4>
+         
+         <ul class="footer-links"> 
+           <li><a href="" class="footer-link">About Us</a></li>
+           <li><a href="" class="footer-link">Delivery Information</a></li>
+           <li><a href="" class="footer-link">Privacy Policy</a></li>
+           <li><a href="" class="footer-link">Terms & Condition</a></li>
+           <li><a href="" class="footer-link">Contact Us Us</a></li>
+           <li><a href="" class="footer-link">Support Center</a></li>
+         </ul>
+       </div>
+ 
+       <div class="footer-content">
+         <h4 class="footer-title">My Account</h4>
+         
+         <ul class="footer-links"> 
+           <li><a href="" class="footer-link">Sign In</a></li>
+           <li><a href="" class="footer-link">View Cart</a></li>
+           <li><a href="" class="footer-link">My Wishlist</a></li>
+           <li><a href="" class="footer-link">Track My Order</a></li>
+           <li><a href="" class="footer-link">Help</a></li>
+         </ul>
+       </div>
+ 
+       <div class="footer-content">
+           <h4 class="footer-title">Secured Payment & Gateways</h4>
+           <img src="assets/img/payment-method.png" alt="" class="payment-img">
+         </div>
+       </div>
+ 
+       <div class="footer-bottom">
+         <p class="copyright">&copy; 2023. All rights reserved</p>
+       </div>
+      </div>
+     </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

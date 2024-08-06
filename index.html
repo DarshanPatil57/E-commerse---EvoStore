@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <h1>EvoStore <i class="ri-shopping-cart-2-line"></i></h1>
+        </a>
+        <div class="nav-menu" id="nav-menu">
+          <div class="nav-menu-top">
+            <a href="index.html" class="nav-menu-logo">
+              <img src="assets/img/logo.svg" alt="">
+            </a>
+            <div class="nav-close" id="nav-close">
+              <i class="ri-close-line"></i>
+            </div>
+          </div>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="shop.html" class="nav-link">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="accounts.html" class="nav-link">My Account</a>
+              </li>
+              <li class="nav-item">
+                <a href="compare.html" class="nav-link">Compare</a>
+              </li>
+              <li class="nav-item">
+                <a href="login-register.html" class="nav-link">Login</a>
+              </li>
+
+            </ul>
+
+            <div class="search">
+              <input type="text" placeholder="Search for item..." class="form-input">
+              <button class="search-btn">
+                <img src="assets/img/search.png" alt="">
+              </button>
+            </div>
+        </div>
+
+        <div class=" wishlist-cart">
+            <a href="wishlist.html" class="header-action-btn">
+            <img src="assets/img/icon-heart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+          
+          <a href="cart.html" class="header-action-btn">
+            <img src="assets/img/icon-cart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+          <div class="header-action-btn nav-toggle" id="nav-toggle">
+            <img src="assets/img/menu-burger.svg" alt="">
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home section-lg">
+        <div class="home-container container grid">
+          <div class="home-content">
+            <span class="home-subtitle">Hot promotions</span>
+            <h1 class="home-title">Fashion Trending <br> <span>Great Collection</span></h1>
+            <p class="home-description">Save more with coupons & up to 20% off</p>
+            <a href="shop.html" class="btn">Shop Now</a>
+          </div>
+          <img src="https://img.freepik.com/free-vector/people-making-online-purchases_74855-4454.jpg?size=626&ext=jpg&ga=GA1.1.879519512.1722674432&semt=ais_hybrid" alt="" class="home-img">
+        </div>
+      </section>
+
+      <!--=============== CATEGORIES ===============-->
+      <section class="categories container section">
+        <h3 class="section-title"><span>Popular</span> Categories</h3>
+        <div class="categories-container swiper">
+          
+          
+          <div class="swiper-wrapper">
+
+            <a href="shop.html" class="category-item  swiper-slide">
+              <img src="assets/img/category-1.jpg" alt="" class="category-img">
+              <h3 class="category-title">T-shirt</h3>
+            </a>
+
+            <a href="shop.html" class="category-item swiper-slide">
+              <img src="assets/img/category-2.jpg" alt="" class="category-img">
+              <h3 class="category-title">Bags</h3>
+            </a>
+
+            <a href="shop.html" class="category-item swiper-slide">
+              <img src="assets/img/category-3.jpg" alt="" class="category-img">
+              <h3 class="category-title">Sandal</h3>
+            </a>
+
+            <a href="shop.html" class="category-item swiper-slide">
+              <img src="assets/img/category-4.jpg" alt="" class="category-img">
+              <h3 class="category-title">Scarf Cap</h3>
+            </a>
+
+            <a href="shop.html" class="category-item swiper-slide">
+              <img src="assets/img/category-5.jpg" alt="" class="category-img">
+              <h3 class="category-title">Shoes</h3>
+            </a>
+
+            <a href="shop.html" class="category-item swiper-slide">
+              <img src="assets/img/category-6.jpg" alt="" class="category-img">
+              <h3 class="category-title">Pillowcase</h3>
+            </a>
+
+            <a href="shop.html" class="category-item swiper-slide">
+              <img src="assets/img/category-7.jpg" alt="" class="category-img">
+              <h3 class="category-title">Jumpsuit</h3>
+            </a>
+
+            <a href="shop.html" class="category-item swiper-slide">
+              <img src="assets/img/category-8.jpg" alt="" class="category-img">
+              <h3 class="category-title">Hats</h3>
+            </a>
+          </div>  
+          
+
+        </div>
+      </section>
+
+      <!--=============== PRODUCTS ===============-->
+      <section class="products section container">
+        <div class="tab-btns">
+          <span class="tab-btn active-tab" data-target="#featured">Featured</span>
+          <span class="tab-btn" data-target="#popular">Popular</span>
+          <span class="tab-btn" data-target="#new-added" >New added</span>
+        </div>
+
+        <div class="tab-items">
+          <div class="tab-item active-tab" content id="featured">
+            <div class="product-container grid">
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-1-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-1-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-pink">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-2-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-2-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-3-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-3-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Shoes</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-4-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-4-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-blue">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern pants</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-5-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-5-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-pink">-30%</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Cap</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/jewellery-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/jewellery-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-pink">-22%</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Jewellery</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-7-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-7-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-green">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Top</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-8-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-8-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Jackets</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-item" content id="popular">
+            <div class="product-container grid">
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/2.jpg" alt="" class="product-img default">
+                    <img src="assets/img/3.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-pink">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-9-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-9-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-green">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-10-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-10-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category"></span>
+                  <a href="details.html">
+                    <h3 class="product-title">Sandles</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-4-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-4-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-blue">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern pants</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-5-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-5-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-pink">-30%</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern caps</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-11-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-11-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-pink">-22%</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title"></h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-7-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-7-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-green"></div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-8-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-8-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-item"content id="new-added">
+            <div class="product-container grid">
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-12-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-12-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-pink">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-2-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-2-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-green">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-8-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-8-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-orange">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-13-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-13-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-blue">Hot</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-1-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-1-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-pink">-30%</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-6-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-6-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-pink">-22%</div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-7-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-7-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  <div class="product-badge light-green"></div>
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-banner">
+                  <a href="details.html" class="product-imgages">
+                    <img src="assets/img/product-8-1.jpg" alt="" class="product-img default">
+                    <img src="assets/img/product-8-2.jpg" alt="" class="product-img hover">
+                  </a>
+                  <div class="product-action">
+                    <a href="#" class="action-btn" aria-label="Quick View">
+                      <i class="ri-eye-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                      <i class="ri-heart-line"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" aria-label="Compare">
+                      <i class="ri-shuffle-line"></i>
+                    
+                    </a>
+                  </div>
+                  
+                </div>
+                <div class="product-content">
+                  <span class="product-category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product-title">Colorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product-rating">
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="product-price flex" >
+                    <span class="new-price">₹ 2500</span>
+                    <span class="old-price">₹ 3500</span>
+                  </div>
+                  <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                    <i class="ri-shopping-cart-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== DEALS ===============-->
+      <section class="deals">
+        <div class="deals-container container grid">
+          <div class="deals-item">
+            <div class="deals-group">
+              <h3 class="deals-brand">Deal of the Day</h3>
+              <span class="deals-category">Limited quantities</span>
+            </div>
+            <h4 class="deals-title">Summer Collection New Addition</h4>
+            <div class="deals-price flex">
+              <span class="new-price">₹ 1500</span>
+              <span class="old-price">₹ 2800</span>
+            </div>
+            <div class="deals-group">
+              <p class="deals-countdown">Hurry Up ! Offer End In:</p>
+              <div class="countdown">
+                <div class="countdown-amount">
+                  <p class="countdown-period">02</p>
+                  <span class="unit">Days</span>
+                </div>
+                <div class="countdown-amount">
+                  <p class="countdown-period">20</p>
+                  <span class="unit">Hours</span>
+                </div>
+                <div class="countdown-amount">
+                  <p class="countdown-period">57</p>
+                  <span class="unit">Mins</span>
+                </div>
+                <div class="countdown-amount">
+                  <p class="countdown-period">02</p>
+                  <span class="unit">Sec</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="deals-btn">
+              <a href="details.html" class="btn btn-md">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="deals-item">
+            <div class="deals-group">
+              <h3 class="deals-brand">Women Clothing</h3>
+              <span class="deals-category">Short & Bag</span>
+            </div>
+            <h4 class="deals-title">Try Something new on Vaction</h4>
+            <div class="deals-price flex">
+              <span class="new-price">₹ 3500</span>
+              <span class="old-price">₹ 4800</span>
+            </div>
+            <div class="deals-group">
+              <p class="deals-countdown">Hurry Up ! Offer End In:</p>
+              <div class="countdown">
+                <div class="countdown-amount">
+                  <p class="countdown-period">02</p>
+                  <span class="unit">Days</span>
+                </div>
+                <div class="countdown-amount">
+                  <p class="countdown-period">20</p>
+                  <span class="unit">Hours</span>
+                </div>
+                <div class="countdown-amount">
+                  <p class="countdown-period">57</p>
+                  <span class="unit">Mins</span>
+                </div>
+                <div class="countdown-amount">
+                  <p class="countdown-period">02</p>
+                  <span class="unit">Sec</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="deals-btn">
+              <a href="details.html" class="btn btn-md">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEW ARRIVALS ===============-->
+      <section class="new-arrivals container section">
+        <h3 class="section-title"><span>New</span> Arrivals</h3>
+        <div class="new-container swiper">
+          
+          
+          <div class="swiper-wrapper">
+            <div class="product-item swiper-slide">
+              <div class="product-banner">
+                <a href="details.html" class="product-imgages">
+                  <img src="assets/img/product-12-1.jpg" alt="" class="product-img default">
+                  <img src="assets/img/product-12-2.jpg" alt="" class="product-img hover">
+                </a>
+                <div class="product-action">
+                  <a href="#" class="action-btn" aria-label="Quick View">
+                    <i class="ri-eye-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                    <i class="ri-heart-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Compare">
+                    <i class="ri-shuffle-line"></i>
+                  
+                  </a>
+                </div>
+                <div class="product-badge light-pink">Hot</div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product-title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product-rating">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                </div>
+                <div class="product-price flex" >
+                  <span class="new-price">₹ 2500</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                  <i class="ri-shopping-cart-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item swiper-slide">
+              <div class="product-banner">
+                <a href="details.html" class="product-imgages">
+                  <img src="assets/img/product-2-1.jpg" alt="" class="product-img default">
+                  <img src="assets/img/product-2-2.jpg" alt="" class="product-img hover">
+                </a>
+                <div class="product-action">
+                  <a href="#" class="action-btn" aria-label="Quick View">
+                    <i class="ri-eye-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                    <i class="ri-heart-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Compare">
+                    <i class="ri-shuffle-line"></i>
+                  
+                  </a>
+                </div>
+                <div class="product-badge light-green">Hot</div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product-title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product-rating">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                </div>
+                <div class="product-price flex" >
+                  <span class="new-price">₹ 2500</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                  <i class="ri-shopping-cart-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item swiper-slide">
+              <div class="product-banner">
+                <a href="details.html" class="product-imgages">
+                  <img src="assets/img/product-8-1.jpg" alt="" class="product-img default">
+                  <img src="assets/img/product-8-2.jpg" alt="" class="product-img hover">
+                </a>
+                <div class="product-action">
+                  <a href="#" class="action-btn" aria-label="Quick View">
+                    <i class="ri-eye-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                    <i class="ri-heart-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Compare">
+                    <i class="ri-shuffle-line"></i>
+                  
+                  </a>
+                </div>
+                <div class="product-badge light-orange">Hot</div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product-title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product-rating">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                </div>
+                <div class="product-price flex" >
+                  <span class="new-price">₹ 2500</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                  <i class="ri-shopping-cart-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item swiper-slide">
+              <div class="product-banner">
+                <a href="details.html" class="product-imgages">
+                  <img src="assets/img/product-13-1.jpg" alt="" class="product-img default">
+                  <img src="assets/img/product-13-2.jpg" alt="" class="product-img hover">
+                </a>
+                <div class="product-action">
+                  <a href="#" class="action-btn" aria-label="Quick View">
+                    <i class="ri-eye-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                    <i class="ri-heart-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Compare">
+                    <i class="ri-shuffle-line"></i>
+                  
+                  </a>
+                </div>
+                <div class="product-badge light-blue">Hot</div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product-title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product-rating">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                </div>
+                <div class="product-price flex" >
+                  <span class="new-price">₹ 2500</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                  <i class="ri-shopping-cart-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item swiper-slide">
+              <div class="product-banner">
+                <a href="details.html" class="product-imgages">
+                  <img src="assets/img/product-1-1.jpg" alt="" class="product-img default">
+                  <img src="assets/img/product-1-2.jpg" alt="" class="product-img hover">
+                </a>
+                <div class="product-action">
+                  <a href="#" class="action-btn" aria-label="Quick View">
+                    <i class="ri-eye-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                    <i class="ri-heart-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Compare">
+                    <i class="ri-shuffle-line"></i>
+                  
+                  </a>
+                </div>
+                <div class="product-badge light-pink">-30%</div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product-title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product-rating">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                </div>
+                <div class="product-price flex" >
+                  <span class="new-price">₹ 2500</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                  <i class="ri-shopping-cart-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item swiper-slide">
+              <div class="product-banner">
+                <a href="details.html" class="product-imgages">
+                  <img src="assets/img/product-6-1.jpg" alt="" class="product-img default">
+                  <img src="assets/img/product-6-2.jpg" alt="" class="product-img hover">
+                </a>
+                <div class="product-action">
+                  <a href="#" class="action-btn" aria-label="Quick View">
+                    <i class="ri-eye-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                    <i class="ri-heart-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Compare">
+                    <i class="ri-shuffle-line"></i>
+                  
+                  </a>
+                </div>
+                <div class="product-badge light-pink">-22%</div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product-title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product-rating">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                </div>
+                <div class="product-price flex" >
+                  <span class="new-price">₹ 2500</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                  <i class="ri-shopping-cart-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product-item swiper-slide">
+              <div class="product-banner">
+                <a href="details.html" class="product-imgages">
+                  <img src="assets/img/product-7-1.jpg" alt="" class="product-img default">
+                  <img src="assets/img/product-7-2.jpg" alt="" class="product-img hover">
+                </a>
+                <div class="product-action">
+                  <a href="#" class="action-btn" aria-label="Quick View">
+                    <i class="ri-eye-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Add To Wishlist">
+                    <i class="ri-heart-line"></i>
+                  </a>
+
+                  <a href="#" class="action-btn" aria-label="Compare">
+                    <i class="ri-shuffle-line"></i>
+                  
+                  </a>
+                </div>
+                <div class="product-badge light-green"></div>
+              </div>
+              <div class="product-content">
+                <span class="product-category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product-title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product-rating">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                </div>
+                <div class="product-price flex" >
+                  <span class="new-price">₹ 2500</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                  <i class="ri-shopping-cart-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>  
+          
+
+        </div>
+      </section>
+
+      <!--=============== SHOWCASE ===============-->
+      <section class="showcase section">
+        <div class="showcase-container container grid">
+          <div class="showcase-wrapper">
+            <h3 class="section-title">Hot Releases</h3>
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-1.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Floral Print Casual Cotton Dress</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-2.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Reffled Solid Long Sleeve Blou</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-3.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Floral Print Casual Cotton Dress</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-wrapper">
+            <h3 class="section-title">Deals & Outlet</h3>
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-4.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Floral Print Casual Cotton Dress</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-5.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Reffled Solid Long Sleeve Blou</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-6.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Floral Print Casual Cotton Dress</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-wrapper">
+            <h3 class="section-title">Hot Releases</h3>
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-1.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Floral Print Casual Cotton Dress</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-2.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Reffled Solid Long Sleeve Blou</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-3.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Floral Print Casual Cotton Dress</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-wrapper">
+            <h3 class="section-title">Hot Releases</h3>
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-7.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Floral Print Casual Cotton Dress</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-8.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Reffled Solid Long Sleeve Blou</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <a href="details.html" class="showcase-img-box">
+                <img src="assets/img/showcase-img-9.jpg" alt="" class="showcase">
+              </a>
+              <div class="showcase-content">
+                <a href="details.html">
+                  <h4 class="showcase-title">Floral Print Casual Cotton Dress</h4>
+                </a>
+
+                <div class="showcase-price flex">
+                  <span class="new-price">₹ 1800</span>
+                  <span class="old-price">₹ 3500</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section home-newsletter">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-title flex">
+            <img src="assets/img/icon-email.svg" alt="" class="newsletter-icon">
+            Sign Up to Newsletter
+          </h3>
+          <p class="newsletter-description">
+            ...and receive free coupon for first shopping
+          </p>
+          <form action="" class="newsletter-form">
+            <input type="text" placeholder="Enter your Email" class="newsletter-input">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+     <div class="footer-container grid">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">
+          <img src="assets/img/logo.svg" alt="" class="footer-logo-img">
+        </a>
+        <h4 class="footer-subtitle">Contact</h4>
+        <p class="footer-description">
+          <span>Address:</span> 564 NewDelhi, Street 5 , India
+        </p>
+        <p class="footer-description">
+          <span>Phone:</span> (+91) 12 3456 7890
+        </p>
+        <p class="footer-description">
+         <span>Time:</span> 10:00 - 18:00, Mon-Sat
+        </p>
+
+        <div class="footer-social">
+          <h4 class="footer-subtitle">Follow Us</h4>
+        </div>
+
+        <div class="footer-social-links flex">
+          <a href="#">
+            <img src="assets/img/icon-facebook.svg" alt="" class="footer-social-icon">
+          </a>
+
+          <a href="#">
+            <img src="assets/img/icon-instagram.svg" alt="" class="footer-social-icon">
+          </a>
+
+          <a href="#">
+            <img src="assets/img/icon-pinterest.svg" alt="" class="footer-social-icon">
+          </a>
+
+          <a href="#">
+            <img src="assets/img/icon-twitter.svg" alt="" class="footer-social-icon">
+          </a>
+
+          <a href="#">
+            <img src="assets/img/icon-youtube.svg" alt="" class="footer-social-icon">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-content">
+        <h4 class="footer-title">Address</h4>
+        
+        <ul class="footer-links"> 
+          <li><a href="" class="footer-link">About Us</a></li>
+          <li><a href="" class="footer-link">Delivery Information</a></li>
+          <li><a href="" class="footer-link">Privacy Policy</a></li>
+          <li><a href="" class="footer-link">Terms & Condition</a></li>
+          <li><a href="" class="footer-link">Contact Us Us</a></li>
+          <li><a href="" class="footer-link">Support Center</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-content">
+        <h4 class="footer-title">My Account</h4>
+        
+        <ul class="footer-links"> 
+          <li><a href="" class="footer-link">Sign In</a></li>
+          <li><a href="" class="footer-link">View Cart</a></li>
+          <li><a href="" class="footer-link">My Wishlist</a></li>
+          <li><a href="" class="footer-link">Track My Order</a></li>
+          <li><a href="" class="footer-link">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-content">
+          <h4 class="footer-title">Secured Payment & Gateways</h4>
+          <img src="assets/img/payment-method.png" alt="" class="payment-img">
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2023. All rights reserved</p>
+      </div>
+     </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
